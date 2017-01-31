@@ -1,0 +1,32 @@
+st=>start: New Project|past
+e=>end: Project live|past
+s1=>operation: install Node.js|future
+s2=>operation: install GIT|future
+s3=>operation: npm init|future
+s4=>operation: npm install -save|future
+s5=>operation: git init|future
+c1=>operation: |approved
+c2=>operation: |approved
+c3=>operation: |approved
+c4=>operation: |approved
+c5=>operation: |approved
+d1=>operation: |rejected
+d2=>operation: |rejected
+d3=>operation: |rejected
+d4=>operation: |rejected
+d5=>operation: |rejected
+d6=>operation: |rejected
+
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|future
+
+st->s1(right)->s2(right)->s3(right)->s4(right)->s5(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
