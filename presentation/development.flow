@@ -1,32 +1,57 @@
 st=>start: New Project|past
-e=>end: Project live|past
+e=>end: Ready to code|past
 s1=>operation: install Node.js|future
 s2=>operation: install GIT|future
+s2a=>operation: install Angular CLI|future
 s3=>operation: npm init|future
-s4=>operation: npm install -save|future
-s5=>operation: git init|future
-c1=>operation: |approved
-c2=>operation: |approved
-c3=>operation: |approved
-c4=>operation: |approved
-c5=>operation: |approved
-d1=>operation: |rejected
-d2=>operation: |rejected
-d3=>operation: |rejected
-d4=>operation: |rejected
-d5=>operation: |rejected
-d6=>operation: |rejected
+s4=>operation: git init|future
+s5=>operation: npm install -save|future
+s5a=>operation: let's go|past
+c1=>operation: webpack|approved
+c2=>operation: jasmine|approved
+c3=>operation: angular CLI|approved
+d6=>operation: Live!|rejected
+cd1=>condition: got env?|past
+cd2=>condition: proj init?|past
+st->cd1
+cd1(no,right)->s1->s2->s2a
+cd1(yes,down)->s5a->cd2
+cd2(no,right)->s3->s4->s5
+cd2(yes,down)->c1->c2->c3
+c3(right)->e
 
-op1=>operation: My Operation|past
-op2=>operation: Stuff|current
-sub1=>subroutine: My Subroutine|invalid
-cond=>condition: Yes
-or No?|approved:>http://www.google.com
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something...|future
+------------------------------
 
-st->s1(right)->s2(right)->s3(right)->s4(right)->s5(right)->cond
-cond(yes, right)->c2
-cond(no)->sub1(left)->op1
-c2(yes)->io->e
-c2(no)->op2->e
+st=>start: Ready to code|past
+e=>end: Ready to deploy|past
+s1=>operation: ng init|approved
+s2=>operation: ng directive|approved
+s2a=>operation: ng service|approved
+c1=>operation: actually write code|future
+d1=>operation: Jenkins/Travis|rejected
+d2=>operation: Jasmine|rejected
+d3=>operation: Protractor|rejected
+cd1=>condition: new modules?|past
+cd2=>condition: test required?|past
+
+st(right)->cd1
+cd1(yes,down)->s1->s2->s2a
+cd1(no,right)->c1(right)->cd2(right)
+cd2(no,right)->e
+cd2(yes,down)->d1->d2->d3->e
+
+------------------------------
+
+st=>start: Ready to deploy|past
+e=>end: Live!|past
+e2=>end: Back to drawing board|rejected
+
+d1=>operation: Jenkins/Travis|future
+d2=>operation: Jasmine|future
+d3=>operation: Protractor|future
+cd1=>condition: tests passed?|current
+
+
+st->d1(right)->d2(right)->d3->cd1
+cd1(no, down)->e2
+cd1(yes,right)->e
