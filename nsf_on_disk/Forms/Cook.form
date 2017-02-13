@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<form name='Cook' alias='Cook' xmlns='http://www.lotus.com/dxl' renderpassthrough='true'>
+<body><richtext>
+<pardef id='1'/>
+<par def='1'/>
+<table widthtype='fitmargins'>
+<tablerow>
+  <tablecell>
+    <par def='1'>unid</par>
+  </tablecell>
+  <tablecell>
+    <par def='1'>
+      <field type='text' kind='editable' name='unid'/>
+    </par>
+  </tablecell>
+</tablerow>
+<tablerow>
+  <tablecell>
+    <par def='1'>name</par>
+  </tablecell>
+  <tablecell>
+    <par def='1'>
+      <field type='text' kind='editable' name='name'/>
+    </par>
+  </tablecell>
+</tablerow>
+<tablerow>
+  <tablecell>
+    <par def='1'>specialty</par>
+  </tablecell>
+  <tablecell>
+    <par def='1'>
+      <field type='text' kind='editable' name='specialty'/>
+    </par>
+  </tablecell>
+</tablerow>
+</table>
+<par def='1'/>
+</richtext></body></form>

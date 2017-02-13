@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<view name='ErrorModelView' alias='ErrorModelView' xmlns='http://www.lotus.com/dxl' showinmenu='true'
+ headers='simple' showresponsehierarchy='true' showmargin='true' shrinkrows='true'
+ extendlastcolumn='false' showhierarchies='false' unreadcolor='black' rowlinecount='5'
+ headerlinecount='1' rowspacing='1' bgcolor='white' altrowcolor='#f7f7f7'
+ totalscolor='black' headerbgcolor='white' boldunreadrows='true' 
+ marginwidth='0px' marginbgcolor='white' gridstyle='dot' gridcolor='silver'>
+<code event='selection'><formula>SELECT Form="ErrorModel"</formula></code>
+<actionbar bgcolor='#f0f0f0' bordercolor='black'>
+<actionbuttonstyle bgcolor='#f0f0f0'/><font color='system'/><border style='solid'
+ width='0px 0px 1px'/>
+<action title='_Forward' showinbar='false' systemcommand='forward'/>
+</actionbar>
+<column sort='ascending' resort='both' hidedetailrows='false' itemname='code'
+ width='10' resizable='true' deferindexcreation='true'>
+ <columnheader title='code'></columnheader>
+</column>
+<column sort='ascending' resort='both' hidedetailrows='false' itemname='message'
+ width='10' resizable='true' deferindexcreation='true'>
+ <columnheader title='message'></columnheader>
+</column>
+<column itemname='$unid' width='10'>
+  <columnheader title='unid'></columnheader>
+  <code event='value'>
+    <formula>@Text(@DocumentUniqueID)</formula>
+  </code>
+</column>
+</view>

@@ -151,9 +151,8 @@ definitions:
     required:
       - name
     properties:
-      code:
-        type: integer
-        format: int32
+      unid:
+        type: string
       name:
         type: string
       taste:
@@ -169,6 +168,8 @@ definitions:
     required:
       - name
     properties:
+      unid:
+        type: string     
       name:
         type: string
       specialty:
