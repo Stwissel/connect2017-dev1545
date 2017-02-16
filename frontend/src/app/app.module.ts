@@ -8,7 +8,9 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { HomeComponent } from './home/home.component';
 import { FruitComponent } from './fruit/fruit.component';
 import { FruitListComponent } from './fruit-list/fruit-list.component';
-import { FruitServiceComponent } from './fruit-service/fruit-service.component';
+import { FruitServiceService } from './fruit-service.service';
+import { AuthService} from './auth.service';
+import { AuthGuardService} from './auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -16,8 +18,7 @@ import { FruitServiceComponent } from './fruit-service/fruit-service.component';
     MainMenuComponent,
     HomeComponent,
     FruitComponent,
-    FruitListComponent,
-    FruitServiceComponent
+    FruitListComponent
   ],
   imports: [
     BrowserModule,
