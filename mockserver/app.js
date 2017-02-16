@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 var FileDataStore = middleware.FileDataStore;
 var store = new FileDataStore();
-middleware(path.join(__dirname, '../frontend/foodstore.yaml'), app, function(err, middleware) {
+middleware(path.join(__dirname, '../frontend/foodstore.yaml'),
+ app, function(err, middleware) {
   app.use(
     middleware.metadata(),
     middleware.CORS(),
