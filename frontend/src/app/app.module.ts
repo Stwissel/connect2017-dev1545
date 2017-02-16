@@ -4,10 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
+import { HomeComponent } from './home/home.component';
+import { FruitComponent } from './fruit/fruit.component';
+import { FruitListComponent } from './fruit-list/fruit-list.component';
+import { FruitServiceComponent } from './fruit-service/fruit-service.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainMenuComponent,
+    HomeComponent,
+    FruitComponent,
+    FruitListComponent,
+    FruitServiceComponent
   ],
   imports: [
     BrowserModule,
