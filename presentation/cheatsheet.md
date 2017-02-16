@@ -18,7 +18,17 @@ Add Bootstrap
 npm install bootstrap@4.0.0-alpha.6 --save
 npm install @ng-bootstrap/ng-bootstrap --save
 
+nmp install font-awesome --save
+
+Edit angular-cli.json
+"styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css",
+         "../node_modules/font-awesome/css/font-awesome.css"
+         ],
 
 
-
+Editor
+https://www.boottheme.com/app/#page
 
