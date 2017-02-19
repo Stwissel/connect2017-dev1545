@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<view name='ErrorModelView' alias='ErrorModelView' xmlns='http://www.lotus.com/dxl'
+ version='9.0' maintenanceversion='1.4' replicaid='852580C2003064FD' showinmenu='true'
+ publicaccess='false' designerversion='8.5.3' unreadmarks='none' onopengoto='lastopened'
+ onrefresh='displayindicator' headers='simple' opencollapsed='false' showresponsehierarchy='true'
+ showmargin='true' shrinkrows='true' extendlastcolumn='false' showhierarchies='false'
+ unreadcolor='black' rowlinecount='5' headerlinecount='1' rowspacing='1' bgcolor='white'
+ altrowcolor='#f7f7f7' totalscolor='black' headerbgcolor='white' boldunreadrows='true'
+ evaluateactions='false' allownewdocuments='false' allowcustomizations='false'
+ hidemarginborder='false' marginwidth='0px' marginbgcolor='white' gridstyle='dot'
+ gridcolor='silver' uniquekeys='false'>
+<noteinfo noteid='15a' unid='DEB91F069441CC24852580C200306603' sequence='4'>
+<created><datetime>20170209T034838,43-05</datetime></created>
+<modified><datetime>20170209T040532,67-05</datetime></modified>
+<revised><datetime>20170209T040532,66-05</datetime></revised>
+<lastaccessed><datetime>20170209T040532,67-05</datetime></lastaccessed>
+<addedtofile><datetime>20170209T034838,44-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></updatedby>
+<wassignedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></wassignedby><code
+ event='selection'><formula>SELECT Form="ErrorModel"</formula></code>
+<actionbar bgcolor='#f0f0f0' bordercolor='black'>
+<actionbuttonstyle bgcolor='#f0f0f0'/><font size='9pt' color='system'/><border
+ style='solid' width='0px 0px 1px'/>
+<action title='_Forward' showinbar='false' systemcommand='forward'/></actionbar>
+<column sort='ascending' resort='both' hidedetailrows='false' itemname='code'
+ width='10' resizable='true' separatemultiplevalues='false' sortnoaccent='false'
+ sortnocase='false' showaslinks='false' deferindexcreation='true'><columnheader
+ title='code'/></column>
+<column sort='ascending' resort='both' hidedetailrows='false' itemname='message'
+ width='10' resizable='true' separatemultiplevalues='false' sortnoaccent='false'
+ sortnocase='false' showaslinks='false' deferindexcreation='true'><columnheader
+ title='message'/></column>
+<column hidedetailrows='false' itemname='$unid' width='10' resizable='false'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='false' showaslinks='false'><columnheader
+ title='unid'/><code event='value'><formula>@Text(@DocumentUniqueID)</formula></code></column></view>
+

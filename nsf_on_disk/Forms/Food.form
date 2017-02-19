@@ -1,69 +1,99 @@
 <?xml version='1.0' encoding='utf-8'?>
-<form name='Food' alias='Food' xmlns='http://www.lotus.com/dxl' renderpassthrough='true'>
+<form name='Food' alias='Food' xmlns='http://www.lotus.com/dxl' version='9.0'
+ maintenanceversion='1.4' replicaid='852580C2003064FD' publicaccess='false'
+ designerversion='8.5.3' renderpassthrough='true'>
+<noteinfo noteid='172' unid='C516EDA5DFEE38E6852580C20031F224' sequence='3'>
+<created><datetime>20170209T040532,52-05</datetime></created>
+<modified><datetime>20170219T021844,11-05</datetime></modified>
+<revised><datetime>20170219T021844,10-05</datetime></revised>
+<lastaccessed><datetime>20170219T021844,11-05</datetime></lastaccessed>
+<addedtofile><datetime>20170209T040532,54-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></updatedby>
+<wassignedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></wassignedby>
+<actionbar bgcolor='#f0f0f0' bordercolor='black'>
+<actionbuttonstyle bgcolor='#f0f0f0'/><font color='system'/><border style='solid'
+ width='0px 0px 1px'/>
+<action title='Categori_ze' showinbar='false' systemcommand='categorize'/>
+<action title='_Edit Document' showinbar='false' systemcommand='edit'/>
+<action title='_Send Document' showinbar='false' systemcommand='send'/>
+<action title='_Forward' showinbar='false' systemcommand='forward'/>
+<action title='_Move To Folder...' showinbar='false' systemcommand='movetofolder'/>
+<action title='_Remove From Folder' showinbar='false' systemcommand='removefromfolder'/>
+<action title='_Read' showinbar='false' systemcommand='markread'/>
+<action title='_Unread' showinbar='false' systemcommand='markunread'/>
+<action title='_Open in New Window' showinbar='false' systemcommand='openinnewwindow'/>
+<action title='_Print...' showinbar='false' systemcommand='print'/>
+<action title='_Delete' showinbar='false' systemcommand='delete'/>
+<action title='_Document Properties' showinbar='false' systemcommand='properties'/>
+<action title='C_ut' showinbar='false' systemcommand='cut'/>
+<action title='_Copy' showinbar='false' systemcommand='copy'/>
+<action title='Copy as Document _Link' showinbar='false' systemcommand='copyasdoclink'/>
+<action title='Copy as _Table' showinbar='false' systemcommand='copyastable'/>
+<action title='P_aste' showinbar='false' systemcommand='paste'/>
+<action title='_Open' showinbar='false' systemcommand='open'/>
+<action title='Bookmark' showinbar='false' systemcommand='bookmark'/></actionbar>
 <body><richtext>
 <pardef id='1'/>
 <par def='1'/>
-<table widthtype='fitmargins'>
+<table widthtype='fitmargins' refwidth='10.8444in'><tablecolumn width='50%'/><tablecolumn
+ width='50%'/>
 <tablerow>
-  <tablecell>
-    <par def='1'>unid</par>
-  </tablecell>
-  <tablecell>
-    <par def='1'>
-      <field type='text' kind='editable' name='unid'/>
-    </par>
-  </tablecell>
-</tablerow>
+<tablecell>
+<pardef id='3'/>
+<par def='3'>unid</par></tablecell>
+<tablecell>
+<pardef id='4'/>
+<par def='4'><field type='text' kind='computed' name='unid'><code event='defaultvalue'><formula
+>@Text(@DocumentUniqueID)</formula></code></field><compositedata type='98'
+ prevtype='65418' nexttype='222' afterparcount='7' containertype='65418' aftercontainercount='1'
+ afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></tablecell></tablerow>
 <tablerow>
-  <tablecell>
-    <par def='1'>name</par>
-  </tablecell>
-  <tablecell>
-    <par def='1'>
-      <field type='text' kind='editable' name='name'/>
-    </par>
-  </tablecell>
-</tablerow>
+<tablecell>
+<par def='3'>name</par></tablecell>
+<tablecell>
+<par def='4'><field type='text' kind='editable' name='name'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></tablecell></tablerow>
 <tablerow>
-  <tablecell>
-    <par def='1'>taste</par>
-  </tablecell>
-  <tablecell>
-    <par def='1'>
-      <field type='text' kind='editable' name='taste'/>
-    </par>
-  </tablecell>
-</tablerow>
+<tablecell>
+<par def='3'>taste</par></tablecell>
+<tablecell>
+<par def='4'><field type='text' kind='editable' name='taste'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></tablecell></tablerow>
 <tablerow>
-  <tablecell>
-    <par def='1'>color</par>
-  </tablecell>
-  <tablecell>
-    <par def='1'>
-      <field type='text' kind='editable' name='color'/>
-    </par>
-  </tablecell>
-</tablerow>
+<tablecell>
+<par def='3'>color</par></tablecell>
+<tablecell>
+<par def='4'><field type='text' kind='editable' name='color'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></tablecell></tablerow>
 <tablerow>
-  <tablecell>
-    <par def='1'>shape</par>
-  </tablecell>
-  <tablecell>
-    <par def='1'>
-      <field type='text' kind='editable' name='shape'/>
-    </par>
-  </tablecell>
-</tablerow>
+<tablecell>
+<par def='3'>shape</par></tablecell>
+<tablecell>
+<par def='4'><field type='text' kind='editable' name='shape'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></tablecell></tablerow>
 <tablerow>
-  <tablecell>
-    <par def='1'>type</par>
-  </tablecell>
-  <tablecell>
-    <par def='1'>
-      <field type='text' kind='editable' name='type'/>
-    </par>
-  </tablecell>
-</tablerow>
-</table>
-<par def='1'/>
-</richtext></body></form>
+<tablecell>
+<par def='3'>type</par></tablecell>
+<tablecell>
+<par def='4'><field type='text' kind='editable' name='type'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></tablecell></tablerow></table>
+<par def='1'/></richtext></body>
+<item name='$$ScriptName' summary='false' sign='true'><text>Food</text></item></form>
+

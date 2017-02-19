@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.4" replicaid="852580C2003064FD" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="192" sequence="3" unid="14E749A32E7C285F852580CC002532CA">
+<created><datetime>20170219T014618,34-05</datetime></created>
+<modified><datetime>20170219T014618,45-05</datetime></modified>
+<revised><datetime>20170219T014618,44-05</datetime></revised>
+<lastaccessed><datetime>20170219T014618,45-05</datetime></lastaccessed>
+<addedtofile><datetime>20170219T014618,35-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></updatedby>
+<wassignedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>com/notessensei/connect2016/Utils.java</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>com/notessensei/connect2016/Utils.java</text></item></note>
