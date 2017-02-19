@@ -1,3 +1,12 @@
-<p>
-  home works!
-</p>
+
+  <div class="jumbotron">
+    Welcome to the show!
+  </div>
+
+<div class="row">
+  <div class="col12">
+  <p *ngIf="!authService.loggedIn()">To access the wonder world of fruits, please login (top right) and enjoy the show!</p>
+  <p *ngIf="authService.loggedIn()">Pick one of the menu items to get started</p>
+  
+  </div>
+</div>

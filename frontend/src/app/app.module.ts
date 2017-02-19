@@ -10,7 +10,8 @@ import { FruitComponent } from './fruit/fruit.component';
 import { FruitListComponent } from './fruit-list/fruit-list.component';
 import { FruitServiceService } from './fruit-service.service';
 import { AuthService} from './auth.service';
-import { AuthGuardService} from './auth-guard.service';
+import { AuthGuardService } from './auth-guard.service';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -23,9 +24,10 @@ import { AuthGuardService} from './auth-guard.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
-  providers: [],
+  providers: [AuthService,AuthGuardService,FruitServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,13 +3,17 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {MainMenuComponent } from './main-menu/main-menu.component';
-import {HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component';
+import {AuthService} from './auth.service';
+import {RouterModule, RouterOutletMap,  Router} from '@angular/router';
+
 describe('AppComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent, MainMenuComponent, HomeComponent
       ],
+      providers: [AuthService, {provide: Router, useClass: RouterModule}, RouterOutletMap]
     });
     TestBed.compileComponents();
   });

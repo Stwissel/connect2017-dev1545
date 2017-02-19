@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { MainMenuComponent } from './main-menu.component';
+import { Router, RouterModule } from '@angular/router';
+import { AuthService} from '../auth.service';
 
 describe('MainMenuComponent', () => {
   let component: MainMenuComponent;
@@ -11,7 +13,8 @@ describe('MainMenuComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainMenuComponent ]
+      declarations: [MainMenuComponent],
+      providers: [AuthService, {provide: Router, useClass: RouterModule}]
     })
     .compileComponents();
   }));
