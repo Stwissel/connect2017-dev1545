@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:this.data>
+		<xp:dominoDocument var="document1" formName="Food"></xp:dominoDocument>
+	</xp:this.data>
+
+	<xp:table>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Name:" id="name_Label1" for="name1"></xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.name}" id="name1"></xp:inputText>
+			</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Type:" id="type_Label1" for="type1"></xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.type}" id="type1"></xp:inputText>
+			</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Shape:" id="shape_Label1"
+					for="shape1">
+				</xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.shape}" id="shape1"></xp:inputText>
+			</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Color:" id="color_Label1"
+					for="color1">
+				</xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.color}" id="color1"></xp:inputText>
+			</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Taste:" id="taste_Label1"
+					for="taste1">
+				</xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.taste}" id="taste1"></xp:inputText>
+			</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td></xp:td>
+			<xp:td>
+				<xp:messages layout="table" style="color:red"
+					id="messages1">
+				</xp:messages>
+			</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td></xp:td>
+			<xp:td>
+				<xp:button value="Submit" id="button1">
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="complete" immediate="false" save="true"
+						id="eventHandler1">
+					</xp:eventHandler>
+				</xp:button>
+			</xp:td>
+		</xp:tr>
+	</xp:table>
+	<xp:this.navigationRules>
+		<xp:navigationRule outcome="xsp-success" viewId="/index.xsp"></xp:navigationRule>
+	</xp:this.navigationRules>
+	<xp:br></xp:br>
+	<xp:viewPanel rows="30" id="viewPanel1" viewStyle="width:80.0%"
+		pageName="/index.xsp">
+		<xp:this.facets>
+			<xp:pager partialRefresh="true" layout="Previous Group Next"
+				xp:key="headerPager" id="pager1">
+			</xp:pager>
+		</xp:this.facets>
+		<xp:this.data>
+			<xp:dominoView var="view1" viewName="FoodView"></xp:dominoView>
+		</xp:this.data>
+		<xp:viewColumn columnName="name" id="viewColumn1">
+			<xp:viewColumnHeader value="name" id="viewColumnHeader1"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="taste" id="viewColumn2">
+			<xp:viewColumnHeader value="taste" id="viewColumnHeader2"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="color" id="viewColumn3">
+			<xp:viewColumnHeader value="color" id="viewColumnHeader3"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="shape" id="viewColumn4">
+			<xp:viewColumnHeader value="shape" id="viewColumnHeader4"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="type" id="viewColumn5">
+			<xp:viewColumnHeader value="type" id="viewColumnHeader5"></xp:viewColumnHeader>
+		</xp:viewColumn>
+	</xp:viewPanel>
+	<xe:restService id="restService1" ignoreRequestParams="true"
+		pathInfo="/food" state="false">
+		<xe:this.service>
+			<xe:customRestService contentType="application/json"
+				serviceBean="com.notessensei.connect2016.Food">
+			</xe:customRestService>
+		</xe:this.service>
+	</xe:restService>
+
+
+</xp:view>

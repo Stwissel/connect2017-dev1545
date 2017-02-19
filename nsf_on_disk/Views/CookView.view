@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<view name='CookView' alias='CookView' xmlns='http://www.lotus.com/dxl' version='9.0'
+ maintenanceversion='1.4' replicaid='852580C2003064FD' showinmenu='true' publicaccess='false'
+ designerversion='8.5.3' unreadmarks='none' onopengoto='lastopened' onrefresh='displayindicator'
+ headers='simple' opencollapsed='false' showresponsehierarchy='true' showmargin='true'
+ shrinkrows='true' extendlastcolumn='false' showhierarchies='false' unreadcolor='black'
+ rowlinecount='5' headerlinecount='1' rowspacing='1' bgcolor='white' altrowcolor='#f7f7f7'
+ totalscolor='black' headerbgcolor='white' boldunreadrows='true' evaluateactions='false'
+ allownewdocuments='false' allowcustomizations='false' hidemarginborder='false'
+ marginwidth='0px' marginbgcolor='white' gridstyle='dot' gridcolor='silver'
+ uniquekeys='false'>
+<noteinfo noteid='15e' unid='05212A5C366C4246852580C200306610' sequence='4'>
+<created><datetime>20170209T034838,56-05</datetime></created>
+<modified><datetime>20170209T040532,63-05</datetime></modified>
+<revised><datetime>20170209T040532,62-05</datetime></revised>
+<lastaccessed><datetime>20170209T040532,63-05</datetime></lastaccessed>
+<addedtofile><datetime>20170209T034838,57-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></updatedby>
+<wassignedby><name>CN=Stephan H Wissel/OU=Singapore/O=IBM</name></wassignedby><code
+ event='selection'><formula>SELECT Form="Cook"</formula></code>
+<actionbar bgcolor='#f0f0f0' bordercolor='black'>
+<actionbuttonstyle bgcolor='#f0f0f0'/><font size='9pt' color='system'/><border
+ style='solid' width='0px 0px 1px'/>
+<action title='_Forward' showinbar='false' systemcommand='forward'/></actionbar>
+<column sort='ascending' resort='both' hidedetailrows='false' itemname='unid'
+ width='10' resizable='true' separatemultiplevalues='false' sortnoaccent='false'
+ sortnocase='false' showaslinks='false' deferindexcreation='true'><columnheader
+ title='unid'/></column>
+<column sort='ascending' resort='both' hidedetailrows='false' itemname='name'
+ width='10' resizable='true' separatemultiplevalues='false' sortnoaccent='false'
+ sortnocase='false' showaslinks='false' deferindexcreation='true'><columnheader
+ title='name'/></column>
+<column sort='ascending' resort='both' hidedetailrows='false' itemname='specialty'
+ width='10' resizable='true' separatemultiplevalues='false' sortnoaccent='false'
+ sortnocase='false' showaslinks='false' deferindexcreation='true'><columnheader
+ title='specialty'/></column>
+<column hidedetailrows='false' itemname='$unid' width='10' resizable='false'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='false' showaslinks='false'><columnheader
+ title='unid'/><code event='value'><formula>@Text(@DocumentUniqueID)</formula></code></column></view>
+
