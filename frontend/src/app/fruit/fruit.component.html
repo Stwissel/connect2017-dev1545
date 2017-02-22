@@ -1,3 +1,34 @@
-<p>
-  fruit works!
-</p>
+  <div class="jumbotron">
+    Add {{model.name}}
+  </div>
+  <form>
+  <div class="form-group">
+    <label for="fruitName">Fruit Name</label>
+    <input [(ngModel)]="model.name" type="text" class="form-control" id="fruitName" name="fruitName" aria-describedby="fruitHelp" placeholder="Please provide a name">
+    <small id="fruitHelp" class="form-text text-muted">Each fruit needs a name</small>
+  </div>
+  <div class="form-group">
+    <label for="tasteSelect">Select a taste</label>
+    <select [(ngModel)]="model.taste" class="form-control" id="tasteSelect" name="tasteSelect">
+       <option *ngFor="let taste of tastes" [value]="taste">{{taste}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="shapeSelect">Select a shape</label>
+    <select [(ngModel)]="model.shape" class="form-control" id="shapeSelect" name="shapeSelect">
+      <option *ngFor="let shape of shapes" [value]="shape">{{shape}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="typeSelect">Select a type</label>
+    <select [(ngModel)]="model.type" class="form-control" id="typeSelect" name="typeSelect">
+        <option *ngFor="let ftype of ftypes" [value]="ftype">{{ftype}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="fruitColor">Color</label>
+    <input [(ngModel)]="model.color" type="color" class="form-control" id="fruitColor" name="fruitColor">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{{diagnostic}}
