@@ -30,7 +30,7 @@ describe('FruitComponent', () => {
   });
 
   it('should have a form tag', async(() => {
-    const fixture = TestBed.createComponent(FruitComponent);
+    fixture = TestBed.createComponent(FruitComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('form')).toBeDefined();

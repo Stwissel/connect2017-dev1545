@@ -1,0 +1,80 @@
+[
+  {
+    "collection": "/api/food",
+    "name": "/Strawberry",
+    "modifiedOn": "2017-02-22T07:03:54.362Z",
+    "data": {
+      "name": "Strawberry",
+      "shape": "spikey",
+      "taste": "awful",
+      "color": "white",
+      "type": "berry"
+    },
+    "createdOn": "2017-02-22T06:50:45.643Z"
+  },
+  {
+    "collection": "/api/food",
+    "name": "/Durian",
+    "modifiedOn": "2017-02-22T07:04:01.708Z",
+    "data": {
+      "name": "Durian",
+      "shape": "spiky",
+      "taste": "horrible",
+      "color": "white",
+      "type": "tropical"
+    },
+    "createdOn": "2017-02-22T07:02:54.098Z"
+  },
+  {
+    "collection": "/api/food",
+    "name": "/Orange",
+    "modifiedOn": "2017-02-22T07:04:52.991Z",
+    "data": {
+      "name": "Orange",
+      "taste": "sour",
+      "shape": "spiky",
+      "type": "moderate climate",
+      "color": "#ff8000"
+    },
+    "createdOn": "2017-02-22T07:04:52.991Z"
+  },
+  {
+    "collection": "/api/food",
+    "name": "/Raspberry",
+    "modifiedOn": "2017-02-22T07:20:15.025Z",
+    "data": {
+      "name": "Raspberry",
+      "taste": "sour",
+      "shape": "oval",
+      "type": "berry",
+      "color": "#800080"
+    },
+    "createdOn": "2017-02-22T07:07:33.363Z"
+  },
+  {
+    "collection": "/api/food",
+    "name": "/Apple",
+    "modifiedOn": "2017-02-22T07:37:07.520Z",
+    "data": {
+      "name": "Apple",
+      "taste": "sour",
+      "shape": "round",
+      "type": "moderate climate",
+      "color": "#00ff00"
+    },
+    "createdOn": "2017-02-22T07:37:07.520Z"
+  },
+  {
+    "collection": "/api/food",
+    "name": "/Jackfruit",
+    "modifiedOn": "2017-02-22T07:39:42.814Z",
+    "data": {
+      "name": "Jackfruit",
+      "taste": "divine",
+      "shape": "cylinder",
+      "type": "tropical",
+      "color": "#d5b362"
+    },
+    "createdOn": "2017-02-22T07:39:42.814Z"
+  }
+]

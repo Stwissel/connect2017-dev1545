@@ -1,3 +1,28 @@
-<p>
-  fruit-list works!
-</p>
+<div class="jumbotron">
+    Our list of fruits
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Taste</th>
+        <th>Shape</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let fruit of fruits" [ngStyle]="{'background-color': fruit.color}">
+      <th scope="row">
+        {{fruit.name}}
+      </th>
+      <td>
+        {{fruit.taste}}
+      </td>
+      <td>
+        {{fruit.shape}}
+      </td>
+      <td>
+        {{fruit.type}}
+      </td>
+    </tr>

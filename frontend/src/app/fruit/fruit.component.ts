@@ -1,6 +1,7 @@
 import { Fruit } from './fruit';
 import { Component, OnInit } from '@angular/core';
-import {FruitServiceService} from '../fruit-service.service';
+import { FruitServiceService } from '../fruit-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fruit',
@@ -12,19 +13,26 @@ export class FruitComponent implements OnInit {
   tastes: Array<string>;
   shapes: Array<string>;
   ftypes: Array<string>;
-
-  model = new Fruit('Orange', 'sweet', 'orange', 'round', 'tropical');
-
+  model: Fruit = new Fruit();
   submitted = false;
 
-  onSubmit() { this.submitted = true; }
+  onSubmit() {
+
+    this.fruitService.submitFruit(this.model)
+      .subscribe(
+      fruit => {
+      this.submitted = true;
+        this.router.navigate(['/list']);
+      },
+      error => alert('submission failed'));
+  }
 
   // TODO: Remove this when we're done
   get diagnostic() { return JSON.stringify(this.model); }
 
-  constructor(private fruitService: FruitServiceService) {
+  constructor(private fruitService: FruitServiceService, private router: Router) {
 
-   }
+  }
 
   ngOnInit() {
     this.tastes = this.fruitService.getTastes();

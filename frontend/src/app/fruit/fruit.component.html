@@ -1,11 +1,12 @@
-  <div class="jumbotron">
+  <div class="jumbotron" [ngStyle]="{'background-color': model.color}">
     Add {{model.name}}
   </div>
-  <form>
+  <form (ngSubmit)="onSubmit()" #fruitForm="ngForm">
   <div class="form-group">
     <label for="fruitName">Fruit Name</label>
-    <input [(ngModel)]="model.name" type="text" class="form-control" id="fruitName" name="fruitName" aria-describedby="fruitHelp" placeholder="Please provide a name">
-    <small id="fruitHelp" class="form-text text-muted">Each fruit needs a name</small>
+    <input [(ngModel)]="model.name" type="text" class="form-control" id="fruitName" name="fruitName" aria-describedby="fruitHelp" placeholder="Please provide a name" #spy>
+    <small id="fruitHelp" class="form-text text-muted">Each fruit needs a name<br />
+    {{spy.className}}</small>
   </div>
   <div class="form-group">
     <label for="tasteSelect">Select a taste</label>
@@ -26,9 +27,9 @@
     </select>
   </div>
   <div class="form-group">
-    <label for="fruitColor">Color</label>
+    <label for="fruitColor" >Color</label>
     <input [(ngModel)]="model.color" type="color" class="form-control" id="fruitColor" name="fruitColor">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" [disabled]="!fruitForm.form.valid">Submit</button>
 </form>
 {{diagnostic}}
