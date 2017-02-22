@@ -7,7 +7,7 @@
       "name": "Strawberry",
       "shape": "spikey",
       "taste": "awful",
-      "color": "white",
+      "color": "red",
       "type": "berry"
     },
     "createdOn": "2017-02-22T06:50:45.643Z"
@@ -20,7 +20,7 @@
       "name": "Durian",
       "shape": "spiky",
       "taste": "horrible",
-      "color": "white",
+      "color": "#FFFFDD",
       "type": "tropical"
     },
     "createdOn": "2017-02-22T07:02:54.098Z"
