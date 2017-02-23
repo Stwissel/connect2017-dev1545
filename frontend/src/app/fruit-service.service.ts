@@ -14,6 +14,7 @@ export class FruitServiceService {
 
   getTastes() {
     return ['sweet', 'sour', 'boring', 'aweful', 'divine'];
+    // return '7';
   }
 
   getShapes() {
@@ -38,7 +39,7 @@ export class FruitServiceService {
       .catch(this.handleError);
   }
   private extractData(res: Response) {
-    let body = res.json();
+    const body = res.json();
     return body || {};
   }
   private handleError(error: Response | any) {
